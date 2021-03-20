@@ -1,13 +1,29 @@
 import Link from "next/link";
 import React from "react";
+import styled from "@emotion/styled";
+
+const Nav = styled.nav`
+  padding-left: 2rem;
+
+  a {
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: var(--Muted);
+    font-family: "Mulish", sans serif;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+`;
 
 const Navegacion = () => {
   return (
-    <nav>
+    <Nav>
       <Link href="/">Inicio</Link>
-      <Link href="/">Populares</Link>
-      <Link href="/">Nuevo Piso</Link>
-    </nav>
+      <Link href="/populares">Populares</Link>
+      <Link href="/nuevo-piso">Nuevo Piso</Link>
+    </Nav>
   );
 };
 
