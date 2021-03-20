@@ -6,6 +6,7 @@ const InputText = styled.input`
   border: 1px solid var(--Grey);
   padding: 1rem;
   min-width: 300px;
+  border-radius: 0.7rem;
 `;
 
 const InputSubmit = styled.button`
