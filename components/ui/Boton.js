@@ -17,6 +17,7 @@ const Boton = styled.a`
   &:hover {
     cursor: pointer;
     background-color: #0389a6;
+    color: white;
   }
 `;
 
